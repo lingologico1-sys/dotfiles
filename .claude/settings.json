@@ -20,7 +20,23 @@
       "Bash(jq *)",
       "Bash(wrangler *)",
       "Bash(true)",
-      "Skill(*)"
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keygen -t ed25519 -C \"rapha@wsl\" -f ~/.ssh/id_ed25519 -N \"\")",
+      "Skill(*)",
+      "WebSearch",
+      "WebFetch(domain:dev.wix.com)",
+      "Read(//mnt/c/Users/rapha/.claude/**)",
+      "Read(//mnt/c/Users/rapha/**)",
+      "mcp__wix-mcp-remote__SearchWixCLIDocumentation"
+    ],
+    "additionalDirectories": [
+      "/home/rapha/.ssh"
     ]
+  },
+  "mcpServers": {
+    "wix-mcp-remote": {
+      "type": "http",
+      "url": "https://mcp.wix.com/mcp"
+    }
   }
 }

@@ -7,12 +7,8 @@ echo "Installing dotfiles from $DOTFILES_DIR..."
 
 # Claude Code global settings
 mkdir -p ~/.claude
-if [ ! -f ~/.claude/settings.json ] || [ "$(cat ~/.claude/settings.json)" = "{}" ]; then
-  cp "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
-  echo "  ✓ ~/.claude/settings.json"
-else
-  echo "  ~ ~/.claude/settings.json already configured, skipping"
-fi
+cp "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
+echo "  ✓ ~/.claude/settings.json"
 
 # Git config
 if [ ! -f ~/.gitconfig ]; then
